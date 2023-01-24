@@ -7,5 +7,5 @@ interface PersonInterface {
 }
 
 interface ContactInterface extends PersonInterface {
-    phoneNumber: string number
+    [phoneNumber: number]: string;
 }
