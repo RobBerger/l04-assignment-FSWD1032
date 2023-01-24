@@ -3,7 +3,10 @@ interface PersonInterface {
     readonly lastName: string;
     age: number;
     favoriteColor?: string;
-    toString(): string;
+}
+
+function toString(logObj: PersonInterface) {
+    console.log(`${logObj.firstName} ${logObj.lastName} is ${logObj.age} and his favorite color is ${logObj.favoriteColor}`)
 }
 
 interface ContactInterface extends PersonInterface {
@@ -13,3 +16,12 @@ interface ContactInterface extends PersonInterface {
         console.log('a message');
     }
 }
+
+let joe: PersonInterface = {
+    firstName: "Joe",
+    lastName: "Smoe",
+    age: 30,
+    favoriteColor: "Blue"
+}
+
+toString(joe)
