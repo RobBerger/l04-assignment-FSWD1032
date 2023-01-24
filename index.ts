@@ -3,7 +3,4 @@ interface PersonInterface {
     readonly lastName: string;
     age: number;
     favoriteColor?: string;
-    
-
-
 }
