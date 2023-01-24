@@ -12,9 +12,6 @@ function toString(logObj: PersonInterface) {
 interface ContactInterface extends PersonInterface {
     [phoneNumber: number]: string;
     email?: string;
-    printContactDetails(): string {
-        console.log('a message');
-    }
 }
 
 let joe: PersonInterface = {
